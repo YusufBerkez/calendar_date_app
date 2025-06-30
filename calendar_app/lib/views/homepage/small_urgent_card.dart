@@ -14,11 +14,12 @@ class _SmallUrgentCardState extends State<SmallUrgentCard> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 10),
       child: Container(
-        width: 160,
+        width: MediaQuery.of(context).size.width*0.4,
 
         decoration: BoxDecoration(
           color: widget.backgroundColor,
           borderRadius: BorderRadius.circular(20),
+          
         ),
         child: Column(
           children: [
@@ -43,17 +44,17 @@ class _SmallUrgentCardState extends State<SmallUrgentCard> {
             Align(
               alignment: Alignment.center,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                padding: const EdgeInsets.only(left: 20.0,right: 20,bottom: 10),
                 child: Text(
                   "UX Design for MONS calendar",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ),
             ),
-
+            SizedBox(height: 5,),
             //Tarih ve bayrak resmi
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 22),
+              padding: const EdgeInsets.symmetric(horizontal: 18),
               child: Row(
                 children: [
                   Image.asset("images/flag.png"),

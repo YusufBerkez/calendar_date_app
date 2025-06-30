@@ -273,7 +273,7 @@ class _SecondPageState extends State<SecondPage> {
                         );
                       },
                       child: Container(
-                        width: 100,
+                        width: MediaQuery.of(context).size.width*0.25,
                         child: Row(
                           children: [
                             Icon(Icons.add),
