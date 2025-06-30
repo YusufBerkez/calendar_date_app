@@ -193,78 +193,63 @@ class _HomePageState extends State<HomePage> {
       //     ),
       //   ),
       // ),
-
-      // bottomNavigationBar: Padding(
-      //   padding: const EdgeInsets.only(bottom: 20, left: 20, right: 20),
-      //   child: Container(
-      //     height: 60,
-      //     decoration: BoxDecoration(
-      //       borderRadius: BorderRadius.circular(40),
-      //       color: Colors.white,
-      //       boxShadow: [BoxShadow(blurRadius: 20, color: Colors.black38)],
-      //     ),
-      //     child: Row(
-      //       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      //       children: [
-      //         IconButton(
-      //           onPressed: () {
-      //             setState(() {
-      //               selectedHome=true;
-      //               selected_search=false;
-      //             });
-      //           },
-      //           icon: Icon(Icons.home, color: Colors.orange),
-      //         ),
-      //         IconButton(
-      //           onPressed: () {
-      //             Navigator.push(
-      //               context,
-      //               MaterialPageRoute(builder: (context) => SecondPage()),
-      //             );
-      //           },
-      //           icon: Icon(Icons.search, color: Colors.orange),
-      //         ),
-      //         IconButton(
-      //           onPressed: () {
-      //             selectedHome=false;
-      //               selected_search=true;
-      //             Navigator.push(
-      //               context,
-      //               MaterialPageRoute(builder: (context) => Thirdpage()),
-      //             );
-      //           },
-      //           icon: Icon(Icons.check_box_outlined, color: Colors.orange),
-      //         ),
-      //         IconButton(
-      //           onPressed: () {},
-      //           icon: Icon(
-      //             Icons.notifications_none_outlined,
-      //             color: Colors.orange,
-      //           ),
-      //         ),
-      //         CircleAvatar(
-      //           radius: 16,
-      //           child: Image.asset("images/userellipse.png"),
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
-
-
-
-bottomNavigationBar: BottomNavigationBar(
-  
-  currentIndex: selectedIndex,
-  items: [
-  BottomNavigationBarItem(
-    
-    icon: Icon(Icons.home), label: "Home",
-  
-  
-  )
-]),
-
+      
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(bottom: 20, left: 20, right: 20),
+        child: Container(
+          height: 60,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(40),
+            color: Colors.white,
+            boxShadow: [BoxShadow(blurRadius: 20, color: Colors.black38)],
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                onPressed: () {
+                  setState(() {
+                    selectedHome=true;
+                    selected_search=false;
+                  });
+                },
+                icon: Icon(Icons.home, color: Colors.orange),
+              ),
+              IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SecondPage()),
+                  );
+                },
+                icon: Icon(Icons.search, color: Colors.orange),
+              ),
+              IconButton(
+                onPressed: () {
+                  selectedHome=false;
+                    selected_search=true;
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Thirdpage()),
+                  );
+                },
+                icon: Icon(Icons.check_box_outlined, color: Colors.orange),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.notifications_none_outlined,
+                  color: Colors.orange,
+                ),
+              ),
+              CircleAvatar(
+                radius: 16,
+                child: Image.asset("images/userellipse.png"),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
