@@ -9,6 +9,7 @@ class RowBigCard extends StatefulWidget {
 }
 
 class _RowBigCardState extends State<RowBigCard> {
+  
   bool checkboxValue = false;
   @override
   Widget build(BuildContext context) {
@@ -63,9 +64,12 @@ class _RowBigCardState extends State<RowBigCard> {
                   ),
                   Expanded(
                     flex: 1,
-                    child: Column(
-                      children: [Icon(Icons.check_box_outline_blank)],
-                    ),
+                    child: Checkbox(value: (checkboxValue), onChanged: (gelenValue){
+                      
+                      setState(() {
+                        checkboxValue=gelenValue!;
+                      });
+                    })
                   ),
                 ],
               ),

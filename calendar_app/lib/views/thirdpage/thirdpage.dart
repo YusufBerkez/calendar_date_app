@@ -214,6 +214,7 @@ class _ThirdpageState extends State<Thirdpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Container(
+                                color: Colors.amber,
                                 height: 63.5,
                                 width: 48,
                                 child: Column(
@@ -232,8 +233,7 @@ class _ThirdpageState extends State<Thirdpage> {
                                         left: 15.0,
                                       ),
                                       child: Row(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
+                                        
                                         children: [
                                           Icon(
                                             Icons.circle,
